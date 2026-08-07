@@ -7,10 +7,10 @@ modId="sousei"
 version="1.0.0"
 displayName="SouseiAPI"
 displayURL="https://www.curseforge.com"
-logoFile="logo.png"
 credits="KrustyPi so far"
 authors="KrustyPi"
 description="A framework library mod that simplifies and improves biome placement across all dimensions"
+displayTest="IGNORE_SERVER_VERSION"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
