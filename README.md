@@ -40,8 +40,8 @@ Inject custom biomes and surface rules using simple JSON data files (optionally 
 </div>
 
 1. Create or open a datapack inside your world or mod assets directory
-2. Define custom biomes in `data/<namespace>/sousei/voronoi_biomes/<entry_name>.json`
-3. Define custom surface block rules in `data/<namespace>/sousei/surface_rules/<rule_name>.json`
+2. Define custom biomes in `data/<namespace>/voronoi_biomes/<entry_name>.json`
+3. Define custom surface block rules in `data/<namespace>/surface_rules/<rule_name>.json`
 4. Run `/reload` in-game to update biome distributions instantly without restarting
 
 <div align="center">
