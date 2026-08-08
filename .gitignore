@@ -9,7 +9,11 @@
 # Gradle buildsys
 .eclipse/
 .gradle/
-build/
+build/*
+!build/libs/
+build/libs/*
+!build/libs/sousei-1.0-sources.jar
+!build/libs/sousei-1.0.jar
 
 # IDE
 .idea/
