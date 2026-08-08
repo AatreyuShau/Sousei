@@ -15,7 +15,7 @@ Inject custom biomes and surface rules using simple JSON data files (optionally 
 
 [![License](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative&logoColor=white&labelColor=lightslategrey&color=green)](LICENSE)
 ![NeoForge](https://img.shields.io/badge/-neoforge-orange?logo=neoforge&logoColor=white&labelColor=lightslategrey&color=orange)
-[![Java](https://img.shields.io/badge/java-21-blue?logo=openjdk&logoColor=white&labelColor=lightslategrey&color=blue)](https://www.oracle.com/java/)
+![Version](https://img.shields.io/badge/version-1.0.0-blue?logoColor=white&labelColor=lightslategrey&color=blue)
 
 </div>
 
