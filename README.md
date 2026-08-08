@@ -13,9 +13,10 @@
 A framework library mod that simplifies biome placement.\
 Inject custom biomes and surface rules using simple JSON data files (optionally JAVA registrations).
 
-[![License](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative&logoColor=white&labelColor=lightslategrey&color=green)](LICENSE)
-![NeoForge](https://img.shields.io/badge/-neoforge-orange?logo=neoforge&logoColor=white&labelColor=lightslategrey&color=orange)
-![Version](https://img.shields.io/badge/version-1.0.0-blue?logoColor=white&labelColor=lightslategrey&color=blue)
+[![License](https://img.shields.io/badge/License-MIT-yellow?logo=opensourceinitiative&logoColor=white&style=for-the-badge&labelColor=transparent&color=yellow)](LICENSE)
+![NeoForge](https://img.shields.io/badge/-neoforge-orange?logo=neoforge&logoColor=white&style=for-the-badge&labelColor=transparent&color=%23e36c64)
+![Version](https://img.shields.io/badge/version-1.0.0-blue?logoColor=white&style=for-the-badge&labelColor=teal&color=teal)
+[![JitPack](https://img.shields.io/badge/integrate-jitpack-green?logoColor=white&style=for-the-badge&labelColor=transparent&color=seagreen)](https://jitpack.io/#AatreyuShau/Sousei)
 
 </div>
 
