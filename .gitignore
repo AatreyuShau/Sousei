@@ -17,6 +17,7 @@ build/libs/*
 
 # IDE
 .idea/
+.vscode/
 .settings/
 *.iml
 *.classpath
@@ -29,6 +30,9 @@ sousei.mcreator
 
 # Misc / Test run directory
 run/
+/bin
+src/main/resources/data/
+src/main/resources/assets/sousei/lang/en_us.json
 *.class
 *.log
 

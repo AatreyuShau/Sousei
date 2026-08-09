@@ -18,8 +18,10 @@ import net.minecraft.world.level.biome.MultiNoiseBiomeSource;
 import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.RegistryOps;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.QuartPos;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.Holder;
 
@@ -33,8 +35,8 @@ import com.mojang.serialization.MapCodec;
 
 @Mixin(value = MultiNoiseBiomeSource.class, priority = 1500)
 public abstract class MultiNoiseBiomeSourceMixin implements BiomeSourceDimensionHolder {
-	@Shadow
 	@Mutable
+	@Shadow
 	public static MapCodec<MultiNoiseBiomeSource> CODEC;
 	@Unique
 	private static final ThreadLocal<HolderGetter<Biome>> SOUSEI$BIOME_GETTER = new ThreadLocal<>();
@@ -119,12 +121,15 @@ public abstract class MultiNoiseBiomeSourceMixin implements BiomeSourceDimension
 		if (entries.length == 0) {
 			return;
 		}
-		int blockX = net.minecraft.core.QuartPos.toBlock(x);
-		int blockY = net.minecraft.core.QuartPos.toBlock(y);
-		int blockZ = net.minecraft.core.QuartPos.toBlock(z);
 		Climate.TargetPoint target = sampler.sample(x, y, z);
+		MultiNoiseBiomeSource self = (MultiNoiseBiomeSource) (Object) this;
+		Holder<Biome> originalBiomeHolder = self.getNoiseBiome(target);
+		ResourceKey<Biome> vanillaParentKey = (originalBiomeHolder != null) ? originalBiomeHolder.unwrapKey().orElse(null) : null;
+		int blockX = QuartPos.toBlock(x);
+		int blockY = QuartPos.toBlock(y);
+		int blockZ = QuartPos.toBlock(z);
 		Holder<Biome> winningBiome = this.sousei$fastSampler.sample(entries, blockX, blockY, blockZ, Climate.unquantizeCoord(target.temperature()), Climate.unquantizeCoord(target.humidity()), Climate.unquantizeCoord(target.continentalness()),
-				Climate.unquantizeCoord(target.erosion()), Climate.unquantizeCoord(target.depth()), Climate.unquantizeCoord(target.weirdness()), null);
+				Climate.unquantizeCoord(target.erosion()), Climate.unquantizeCoord(target.depth()), Climate.unquantizeCoord(target.weirdness()), vanillaParentKey);
 		if (winningBiome != null && winningBiome.isBound()) {
 			cir.setReturnValue(winningBiome);
 		}

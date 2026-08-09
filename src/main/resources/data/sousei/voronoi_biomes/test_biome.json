@@ -1,0 +1,30 @@
+{
+  "biome": "sousei:test",
+  "priority": 10,
+  "grid_cell_size": 1,
+  "min_radius": 0.0,
+  "max_radius": 150.0,
+  "inner_radius": 0.0,
+  "salt": 70707,
+  "rarity": 1.0,
+  "min_y": 50,
+  "max_y": 85,
+  "climate": {
+    "continentalness": {
+      "min": -0.15,
+      "max": 0.45
+    },
+    "erosion": {
+      "min": 0.25,
+      "max": 1.0
+    }
+  },
+  "valid_parent_biomes": [
+  	"minecraft:plains"
+  ],
+  "dimensions": [
+    "minecraft:overworld",
+    "minecraft:the_end",
+    "testaa:dema"
+  ]
+}
