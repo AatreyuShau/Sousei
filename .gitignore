@@ -39,3 +39,4 @@ src/main/resources/assets/sousei/lang/en_us.json
 # sys 
 .DS_Store
 Thumbs.db
+/src/main/java/pie/rusty/sousei/world

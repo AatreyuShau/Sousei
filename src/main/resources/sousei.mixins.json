@@ -6,7 +6,7 @@
     "NoiseGeneratorSettingsMixin",
     "MultiNoiseBiomeSourceMixin",
     "TheEndBiomeSourceMixin",
-    "NoiseBasedChunkGeneratorMixin"
+    "MinecraftServerDimensionMappingMixin"
   ],
   "client": [],
   "injectors": {
